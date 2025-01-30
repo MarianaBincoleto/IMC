@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IMC - Calculo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <script src="style.js"></script>
-    <style>
-      .principal {
-        text-align: center;
-        border: 2px solid rgba(0, 0, 0, 0.651);
-        border-radius: 10px;
-        margin-left: 35%;
-        margin-right: 35%;
-        background-color: rgba(102, 102, 95, 0.651);
-        opacity: 95%;
-        color: white;
-      }
-      body {
-        background-image: url(https://corretoronlineseguros.com.br/wp-content/uploads/2020/03/10_d%C3%BAvidas_sobre_como_funciona_o_plano_de_sa%C3%BAde.jpg);
-        background-repeat: no-repeat;
-      }
-    </style>
-  </head>
-  <body>
-      <div class="principal pt-3 mt-5 ">
-        <h4>Calculo de IMC - Índice de Massa Corporal</h4>
 
-        <div class="mx-5">
-          <div class="mb-3">
-            <label for="n1" class="form-label">Sexo (M/F):</label>
-            <input type="text" class="form-control" id="n1" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMC - Calculo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="style.js"></script>
+  <style>
+    .principal {
+      text-align: center;
+      border: 2px solid rgba(0, 0, 0, 0.651);
+      border-radius: 10px;
+      margin-left: 35%;
+      margin-right: 35%;
+      background-color: rgba(102, 102, 95, 0.651);
+      opacity: 95%;
+      color: white;
+    }
 
-          <div class="mb-3">
-            <label for="n2" class="form-label">Idade:</label>
-            <input type="number" class="form-control" id="n2" />
-          </div>
+    body {
+      background-image: url(https://corretoronlineseguros.com.br/wp-content/uploads/2020/03/10_d%C3%BAvidas_sobre_como_funciona_o_plano_de_sa%C3%BAde.jpg);
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
 
-          <div class="mb-3">
-            <label for="n3" class="form-label">Altura (m):</label>
-            <input type="number" class="form-control" id="n3" />
-          </div>
+<body>
+  <div class="principal pt-3 mt-5 ">
+    <h4>Calculo de IMC - Índice de Massa Corporal</h4>
 
-          <div class="mb-3">
-            <label for="n4" class="form-label">Peso (Kg):</label>
-            <input type="text" class="form-control" id="n4" />
-          </div>
-        </div>
-        <button class="btn btn-dark w-25" onclick="calcular()">
-          Calcular
-        </button>
-      <div id="resultado">Resultado:</div> </br>
-
+    <div class="mx-5">
+      <div class="mb-3">
+        <label for="n1" class="form-label">Sexo (M/F):</label>
+        <input type="text" class="form-control" id="sexo" />
       </div>
-  </body>
+
+      <div class="mb-3">
+        <label for="n2" class="form-label">Idade:</label>
+        <input type="number" class="form-control" id="idade" />
+      </div>
+
+      <div class="mb-3">
+        <label for="n3" class="form-label">Altura (ex: 1.70):</label>
+        <input type="number" class="form-control" id="altura" />
+      </div>
+
+      <div class="mb-3">
+        <label for="n4" class="form-label">Peso (Kg):</label>
+        <input type="text" class="form-control" id="peso" />
+      </div>
+    </div>
+    <button class="btn btn-dark w-25" onclick="calcular()">
+      Calcular
+    </button>
+    <div id="resultado">Resultado:</div> </br>
+
+  </div>
+</body>
+
 </html>
